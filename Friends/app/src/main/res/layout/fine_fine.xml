@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Штарф">
+
+    </TextView>
+    <TextView
+        android:id="@+id/summ_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Сумма"
+        android:layout_marginLeft="200dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/discount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скидка 50 %"
+        android:textSize="25dp"
+        android:layout_below="@+id/fin_text">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_below="@+id/summ_text"
+        android:text="10 дней"
+        android:layout_marginLeft="200dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="#888000"
+        android:layout_below="@+id/time_text"
+        android:layout_marginLeft="30dp">
+
+    </ImageView>
+</RelativeLayout>

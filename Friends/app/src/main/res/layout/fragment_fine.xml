@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_items_documents"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_documents"
+        android:layout_width="248dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/recycler_items_documents"
+        android:text="добавить документы"
+        tools:ignore="MissingConstraints">
+
+    </Button>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_items_fine"
+            android:layout_width="match_parent"
+            android:layout_height="379dp"
+            android:layout_below="@+id/btn_documents"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:background="#500000"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,UnknownId"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
